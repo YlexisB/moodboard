@@ -1,0 +1,37 @@
+[
+  {
+    "id": "happy",
+    "title": "Happy",
+    "paragraph": "Happy in film is an emotion conveyed through positive character emotions, actions, and outcomes that evoke feelings of joy and satisfaction in the audience.Yellow is a common color used to show happiness in film due to its association with sunshine, warmth, and optimism.Other bright colors like pink, orange, and red can also be used to convey happiness and excitement.Cool colors like light blue or green can be used as complementary colors to create a balance and harmony in the scene, and to make the happy colors pop even more."
+  },
+
+  {
+    "id": "love",
+    "title": "Love",
+    "paragraph": "Love in film is often portrayed as a powerful and transformative force. It can evoke a range of emotions, from joy and passion to heartache and longing. In terms of colors, warm hues such as red, pink, and gold are commonly used to depict love, symbolizing desire, romance, and intensity. These colors create a visually rich and evocative atmosphere, enhancing the emotional impact of love stories on screen."
+  },
+
+  {
+    "id": "sad",
+    "title": "Sad",
+    "paragraph": "Sadness in film is often depicted through a myriad of visual cues, including color. Typically, filmmakers utilize cool tones like muted blues and grays to convey a sense of melancholy and sorrow. These colors create an atmosphere of desolation, reflecting the emotional state of the characters and evoking a somber mood. In their delicate interplay, these hues deepen the audience's connection to the characters' sadness and evoke a poignant response, enhancing the overall impact of the film."
+  },
+
+  {
+    "id": "fear",
+    "title": "Fear",
+    "paragraph": "Fear in film is often depicted through various visual techniques, with color playing a significant role. Filmmakers commonly employ dark and intense colors such as deep blacks, eerie greens, and blood-reds to convey a sense of unease and terror. These colors evoke a feeling of foreboding and danger, intensifying the audience's emotional response and heightening the suspenseful atmosphere. Through strategic use of these colors, filmmakers effectively immerse viewers in a fearful experience, amplifying the impact of the film's narrative and heightening the tension on screen."
+  },
+
+  {
+    "id": "anger",
+    "title": "Anger",
+    "paragraph": "Anger in film is frequently portrayed through visual elements, including the use of color. Filmmakers often employ fiery and vibrant colors like bold reds, intense oranges, and deep shades of black to depict anger and rage. These colors create a visually striking and powerful representation of intense emotions, reflecting the heightened state of the characters and amplifying the energy of the scene. By incorporating these colors, filmmakers effectively communicate the characters' anger and evoke a visceral response from the audience, adding depth and intensity to the overall cinematic experience."
+  },
+
+  {
+    "id": "surprise",
+    "title": "Surprise",
+    "paragraph": "Surprise in film is often conveyed through visual cues, with color playing a significant role. Filmmakers commonly use contrasting and eye-catching colors such as bright yellows, vibrant oranges, and electric blues to depict surprise. These colors create a visual impact that grabs the audience's attention, reflecting the unexpected nature of the moment. By incorporating these colors, filmmakers effectively convey the characters' surprise and evoke a sense of wonder and astonishment in the audience. The use of vibrant and contrasting colors adds a dynamic element to the scene, enhancing the overall impact of the surprise on screen."
+  }
+]
