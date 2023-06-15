@@ -834,3 +834,27 @@ iframe {
   color: white;
   text-transform: uppercase;
 }
+
+#search-submit {
+  border: none;
+  padding: 0.2em 0.5em;
+  animation: ani 2s infinite;
+}
+
+@keyframes ani {
+  from {
+    background-color: rgb(255, 20, 184);
+  }
+  to {
+    background-color: rgb(115, 255, 0);
+  }
+  to {
+    background-color: rgb(255, 230, 0);
+  }
+  to {
+    background-color: rgb(47, 0, 255);
+  }
+  to {
+    background-color: rgb(255, 230, 0);
+  }
+}

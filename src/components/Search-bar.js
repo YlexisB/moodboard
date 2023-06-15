@@ -35,7 +35,7 @@ const Search = () => {
           onChange={handleChange}
           value={searchInput}
         />
-        <button onClick={handleSubmit} type="submit">
+        <button id="search-submit" onClick={handleSubmit} type="submit">
           Search
         </button>
       </form>
