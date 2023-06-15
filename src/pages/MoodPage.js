@@ -11,7 +11,7 @@ const MoodPage = () => {
     const savedImages = JSON.parse(localStorage.getItem("images")) || [];
 
     const filteredImages = savedImages.filter((image) => image.title === title);
-    //displays images on the page
+
     if (filteredImages.length > 0) {
       const allImages = filteredImages.flatMap((image) => image.images);
       setImages(allImages);

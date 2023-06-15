@@ -22,10 +22,6 @@ const Personalboard = () => {
     setSelectedImageSrc(imageSrc);
   };
 
-  // useEffect(() => {
-  //   localStorage.setItem("selectedImage", JSON.stringify(selectedImageSrc));
-  // }, [selectedImageSrc]);
-
   return (
     <div>
       <Header />

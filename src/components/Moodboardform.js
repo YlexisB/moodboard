@@ -48,7 +48,6 @@ const Moodboardform = ({
         const title = nonEmptyInputs[nonEmptyInputs.length - 1].value;
         console.log("Title:", title);
 
-        //  the existing input based on the selected moodboard
         const existingInput = savedInputs.find(
           (input) => input.value === selectedInput.value
         );
@@ -118,7 +117,6 @@ const Moodboardform = ({
       console.log("No image selected.");
     }
 
-    // Remove empty inputs from state and local storage
     const nonEmptyInputs = inputs.filter((input) => input.value.trim() !== "");
 
     setInputs(nonEmptyInputs);

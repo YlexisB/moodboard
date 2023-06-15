@@ -27,7 +27,7 @@ const MoodThumbnail = ({ title, titles, setTitles, onThumbnailClick }) => {
 
     fetchRandomColorGif();
   }, []);
-  // :::::::::::::::::::::::::::::::::::::::::::
+
   const handleMouseOver = () => {
     setIsHovering(true);
   };
@@ -55,7 +55,7 @@ const MoodThumbnail = ({ title, titles, setTitles, onThumbnailClick }) => {
       const filteredImages = storedImages.filter(
         (image) => image.title !== title
       );
-      localStorage.setItem("images", JSON.stringify(filteredImages)); // Update the key to "images"
+      localStorage.setItem("images", JSON.stringify(filteredImages));
     }
 
     setTitles(filteredTitles);

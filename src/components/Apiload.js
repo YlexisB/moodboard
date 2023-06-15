@@ -13,7 +13,7 @@ const Apiload = ({ id, query }) => {
 
   const fetchData = async (keyword) => {
     try {
-      const res = await axios.get(PEXELS_API_URL, {
+      const res = await axios.get(PEXELS_API_URL(keyword, page), {
         headers: {
           Authorization: process.env.REACT_APP_PEXELS_API_KEY,
         },

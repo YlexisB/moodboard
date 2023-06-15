@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import loader from "./Loader";
+import { CONTACT_STUFF } from "../constants";
+
 const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -15,12 +16,8 @@ const ContactForm = () => {
   return (
     <div className={`contact-section ${submitted ? "change-padding" : ""}`}>
       {submitted ? (
-        <p>
-          Your inquiry has been received, and we will get back to you as soon as
-          we can.
-        </p>
+        <p>{CONTACT_STUFF.contactSubmission}</p>
       ) : (
-        // ^^MOVE TO CONSTANTS FILE
         <form id="contact-container ">
           <h1>Get In Touch</h1>
           <div className="input-field">

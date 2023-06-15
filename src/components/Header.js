@@ -47,7 +47,6 @@ export default function Header() {
           <p className="pink">inspire</p>
           <p className="blue">reflect</p>
           <p className="orange">excite</p>
-          {/* MOVE TO CONSTANTS */}
         </div>
       </div>
       <hr />

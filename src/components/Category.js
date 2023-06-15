@@ -1,6 +1,5 @@
 import React from "react";
-import { Routes, Route, useNavigate } from "react-router-dom";
-import emotionData from "../emotionData.json";
+import { useNavigate } from "react-router-dom";
 
 export default function Category() {
   const navigate = useNavigate();
