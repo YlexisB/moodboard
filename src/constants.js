@@ -19,3 +19,7 @@ export const ABOUT_STUFF = {
   giphy1: "https://giphy.com/embed/kQ9aNZug7SX3LsZD2U",
   giphy: "https://giphy.com/gifs/kQ9aNZug7SX3LsZD2U",
 };
+
+export const MOODPAGE_STUFF = {
+  moodpagePara: "( Select and Drag )",
+};

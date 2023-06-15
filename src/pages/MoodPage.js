@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Header from "../components/Header.js";
 import Draggable from "react-draggable";
+import { MOODPAGE_STUFF } from "../constants.js";
 
 const MoodPage = () => {
   const { title } = useParams();
@@ -44,6 +45,9 @@ const MoodPage = () => {
       <Header />
       <div id="moodboard-section">
         <h1>{title}</h1>
+        <span>
+          <h4>{MOODPAGE_STUFF.moodpagePara}</h4>
+        </span>
         <div className="personalpage-container">
           {images.map((image) => (
             <Draggable key={image.id}>
