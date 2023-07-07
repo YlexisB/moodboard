@@ -26,7 +26,7 @@ const Search = () => {
   };
 
   return (
-    <div>
+    <div id="search-stuff">
       <form onSubmit={handleSubmit}>
         <input
           id="search-box"
