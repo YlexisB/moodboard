@@ -1,15 +1,14 @@
 const axios = require("axios");
 const { PEXELS_API_URL } = require("../../src/constants");
+require("dotenv").config();
 
 exports.handler = async (event, context) => {
   try {
     const { keyword, page } = event.queryStringParameters;
-    const apiUrl = PEXELS_API_URL(keyword, page);
-    const API_KEY = process.env.REACT_APP_PEXELS_API_KEY;
 
-    const response = await axios.get(apiUrl, {
+    const response = await axios.get(PEXELS_API_URL(keyword, page), {
       headers: {
-        Authorization: API_KEY,
+        Authorization: process.env.REACT_APP_PEXELS_API_KEY,
       },
     });
 
