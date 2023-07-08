@@ -11,11 +11,11 @@ export const CONTACT_STUFF = {
 
 export const ABOUT_STUFF = {
   aboutPara1:
-    " Introducing Snapstill, where moodboarding meets movie magic! Our whimsically designed platform is the perfect companion for seasoned creatives and budding filmmakers alike. With just a few clicks, you can dive into the captivating world of moodboards and unleash your creative genius.",
+    " Introducing Snap Still, where moodboarding meets movie magic! Our whimsically designed platform is the perfect companion for seasoned creatives and budding filmmakers alike. With just a few clicks, you can dive into the captivating world of moodboards and unleash your creative genius.",
   aboutPara2:
-    " Snapstill offers a plethora of emotions to explore, rangingfrom happy and love-filled moments to the depths of sadness, fear, anger, and even the unexpected jolt of surprise. We've got all the feels covered! Our carefully curated categories provide a wide array of captivating images that will make your storytelling journey truly unforgettable.",
+    " Snap Still offers a plethora of emotions to explore, ranging from happy and love-filled moments to the depths of sadness, fear, anger, and even the unexpected jolt of surprise. We've got all the feels covered! Our carefully curated categories provide a wide array of captivating images that will make your storytelling journey truly unforgettable.",
   aboutPara3:
-    "    But wait, there's more! We believe in embracing your unique vision, which is why we've equipped Snapstill with a powerful search engine. Want a fierce dragon in your love-themed moodboard? Go ahead, search it up! Unleash your imagination, and our search engine will do its magic to bring your wildest concepts to life. Whether you're an experienced filmmaker or just dipping your toes into the world of cinema, Snapstill is here to make your  moodboarding experience a breeze. So, grab your popcorn, unleash your creativity, and get ready to capture the perfect essence for your next film project. Lights, camera, moodboard!",
+    "We believe in embracing your unique vision, which is why we've equipped Snap Still with a powerful search engine. Want a dragon in your love-themed moodboard? Go ahead, search it up! And our search engine will do its thing. Whether you're an experienced filmmaker, just dipping your toes into the world of cinema,or just a creative trying to make a vision come to life, Snap Still is here to make your  moodboarding experience a breeze. So, grab your popcorn, unleash your creativity, and get ready to capture the perfect essence for your next project. Lights, camera, Snap Still!",
   giphy1: "https://giphy.com/embed/kQ9aNZug7SX3LsZD2U",
   giphy: "https://giphy.com/gifs/kQ9aNZug7SX3LsZD2U",
 };
