@@ -1,5 +1,5 @@
 const axios = require("axios");
-const { PEXELS_API_URL } = require("../src/constants");
+const { PEXELS_API_URL } = require("../../src/constants");
 
 exports.handler = async (event, context) => {
   try {
