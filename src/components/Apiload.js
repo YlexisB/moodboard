@@ -3,7 +3,6 @@ import Loader from "./Loader";
 import axios from "axios";
 import ImageTiles from "./ImageTiles";
 import emotionData from "../emotionData.json";
-import { PEXELS_API_URL } from "../constants";
 
 const Apiload = ({ id, query }) => {
   const [pexelData, setPexelData] = useState({ photos: [] });
