@@ -1,5 +1,5 @@
 const axios = require("axios");
-const { PEXELS_API_URL } = require("./constants");
+const { PEXELS_API_URL } = require("../../moodboard/constants");
 
 exports.handler = async (event, context) => {
   try {
