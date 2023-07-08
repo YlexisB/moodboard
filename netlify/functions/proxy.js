@@ -8,7 +8,8 @@ exports.handler = async (event, context) => {
 
     const response = await axios.get(PEXELS_API_URL(keyword, page), {
       headers: {
-        Authorization: process.env.REACT_APP_PEXELS_API_KEY,
+        Authorization: `Bearer ${process.env.REACT_APP_PEXELS_API_KEY}`,
+        // process.env.REACT_APP_PEXELS_API_KEY,
       },
     });
 

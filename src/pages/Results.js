@@ -6,7 +6,7 @@ import emotionData from "../emotionData.json";
 import { useParams } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
-export default function Results({}) {
+export default function Results() {
   const location = useLocation();
   const color = location.state && location.state.color;
   const { id } = useParams();
