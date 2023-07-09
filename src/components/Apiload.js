@@ -3,6 +3,7 @@ import Loader from "./Loader";
 import axios from "axios";
 import ImageTiles from "./ImageTiles";
 import emotionData from "../emotionData.json";
+import { PEXELS_API_URL } from "../constants";
 
 const Apiload = ({ id, query }) => {
   const [pexelData, setPexelData] = useState({ photos: [] });
@@ -10,23 +11,24 @@ const Apiload = ({ id, query }) => {
   const [expandedImageId, setExpandedImageId] = useState("");
   const [selectedImageSrc, setSelectedImageSrc] = useState("");
 
-  // const fetchData = async (keyword) => {
-  //   try {
-  //     const res = await axios.get(PEXELS_API_URL(keyword, page), {
-  //       headers: {
-  //         Authorization: process.env.REACT_APP_PEXELS_API_KEY,
-  //       },
-  //     });
-
   const fetchData = async (keyword) => {
     try {
-      const res = await axios.get("/.netlify/functions/proxy", {
-        params: {
-          keyword,
-          page,
+      const res = await axios.get(PEXELS_API_URL(keyword, page), {
+        headers: {
+          Authorization: process.env.REACT_APP_PEXELS_API_KEY,
         },
       });
+
+      // const fetchData = async (keyword) => {
+      //   try {
+      //     const res = await axios.get("/.netlify/functions/proxy", {
+      //       params: {
+      //         keyword,
+      //         page,
+      //       },
+      //     });
       console.log("API Response:", res.data);
+
       setPexelData((prev) => ({
         ...prev,
         photos: [...prev.photos, ...res.data.photos],
