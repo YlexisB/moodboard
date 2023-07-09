@@ -11,22 +11,25 @@ const Apiload = ({ id, query }) => {
   const [expandedImageId, setExpandedImageId] = useState("");
   const [selectedImageSrc, setSelectedImageSrc] = useState("");
 
+  // const fetchData = async (keyword) => {
+  //   try {
+  //     const res = await axios.get(PEXELS_API_URL(keyword, page), {
+  //       headers: {
+  //         Authorization: process.env.REACT_APP_PEXELS_API_KEY,
+  //       },
+  //     });
+
   const fetchData = async (keyword) => {
     try {
-      const res = await axios.get(PEXELS_API_URL(keyword, page), {
+      const res = await axios.get("/.netlify/functions/proxy", {
         headers: {
-          Authorization: process.env.REACT_APP_PEXELS_API_KEY,
+          "Access-Control-Allow-Origin": "*",
+        },
+        params: {
+          keyword,
+          page,
         },
       });
-
-      // const fetchData = async (keyword) => {
-      //   try {
-      //     const res = await axios.get("/.netlify/functions/proxy", {
-      //       params: {
-      //         keyword,
-      //         page,
-      //       },
-      //     });
       console.log("API Response:", res.data);
 
       setPexelData((prev) => ({
