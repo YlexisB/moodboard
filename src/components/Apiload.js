@@ -22,9 +22,6 @@ const Apiload = ({ id, query }) => {
   const fetchData = async (keyword) => {
     try {
       const res = await axios.get("/.netlify/functions/proxy", {
-        headers: {
-          "Access-Control-Allow-Origin": "*",
-        },
         params: {
           keyword,
           page,

@@ -9,6 +9,8 @@ exports.handler = async (event, context) => {
     const response = await axios.get(PEXELS_API_URL(keyword, page), {
       headers: {
         Authorization: process.env.REACT_APP_PEXELS_API_KEY,
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Credentials": "true",
       },
     });
     console.log("API Response:", response.data);
