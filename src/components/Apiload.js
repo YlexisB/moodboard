@@ -30,7 +30,6 @@ const Apiload = ({ id, query }) => {
           page,
         },
       });
-      console.log("API Response:", res.data);
 
       setPexelData((prev) => ({
         ...prev,

@@ -11,8 +11,7 @@ exports.handler = async (event, context) => {
         Authorization: process.env.REACT_APP_PEXELS_API_KEY,
       },
     });
-    console.log("Keyword:", keyword);
-    console.log("Page:", page);
+    console.log("API Response:", response.data);
     return {
       statusCode: 200,
       body: JSON.stringify(response.data),
