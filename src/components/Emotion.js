@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Emotion({ title, paragraph, color }) {
+const Emotion = ({ title, paragraph, color }) => {
   return (
     <div id="section-3">
       <div className="description">
@@ -10,4 +10,6 @@ export default function Emotion({ title, paragraph, color }) {
       </div>
     </div>
   );
-}
+};
+
+export default Emotion;

@@ -6,7 +6,7 @@ import emotionData from "../emotionData.json";
 import { useParams } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
-export default function Results() {
+const Results = () => {
   const location = useLocation();
   const color = location.state && location.state.color;
   const { id } = useParams();
@@ -27,4 +27,6 @@ export default function Results() {
       <Apiload id={id} />
     </div>
   );
-}
+};
+
+export default Results;

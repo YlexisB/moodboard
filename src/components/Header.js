@@ -2,7 +2,7 @@
 import react from "react";
 import { Link } from "react-router-dom";
 import Search from "./Search-bar";
-export default function Header() {
+const Header = () => {
   return (
     <div id="header-all">
       <div id="section-header">
@@ -52,4 +52,6 @@ export default function Header() {
       <hr />
     </div>
   );
-}
+};
+
+export default Header;

@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function Category() {
+const Category = () => {
   const navigate = useNavigate();
 
   const navigateToResults = (emotionData) => {
@@ -68,4 +68,6 @@ export default function Category() {
       </div>
     </div>
   );
-}
+};
+
+export default Category;
