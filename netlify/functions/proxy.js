@@ -13,6 +13,7 @@ exports.handler = async (event, context) => {
         "Access-Control-Allow-Credentials": "true",
       },
     });
+    console.log("Response Headers:", response.headers);
     console.log("API Response:", response.data);
     return {
       statusCode: 200,
