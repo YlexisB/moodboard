@@ -1,6 +1,5 @@
 const axios = require("axios");
 const { PEXELS_API_URL } = require("../../src/constants");
-require("dotenv").config();
 
 exports.handler = async (event, context) => {
   try {
