@@ -2,25 +2,27 @@
 import react from "react";
 import { Link } from "react-router-dom";
 import Search from "./Search-bar";
+import { PAGE_LINKS } from "../constants";
+
 const Header = () => {
   return (
     <div id="header-all">
       <div id="section-header">
         <div className="left">
-          <Link to="/About/" className="text-link">
+          <Link to={PAGE_LINKS.aboutLink} className="text-link">
             <h4 id="about">about</h4>
           </Link>
-          <Link to="/Contact/" className="text-link">
+          <Link to={PAGE_LINKS.contactLink} className="text-link">
             <h4 id="contact">contact us</h4>
           </Link>
         </div>
-        <Link to="/" className="text-link">
+        <Link to={PAGE_LINKS.homepageLink} className="text-link">
           {" "}
           <h1>Snap Still</h1>
         </Link>
         <div className="right">
           <Search id="search-bar" />
-          <Link to="/Personalboard/" className="text-link">
+          <Link to={PAGE_LINKS.personalbLink} className="text-link">
             <h4 id="mood-board">mymoodboard</h4>
           </Link>
         </div>

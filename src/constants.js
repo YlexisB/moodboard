@@ -23,3 +23,13 @@ export const ABOUT_STUFF = {
 export const MOODPAGE_STUFF = {
   moodpagePara: "( Select and Drag )",
 };
+
+export const PAGE_LINKS = {
+  homepageLink: "/moodboard/",
+  resultsLink: "/results/:id",
+  personalbLink: "/personalboard/",
+  moodPageLink: "/moodPage/:title",
+  aboutLink: "/about/",
+  contactLink: "/contact/",
+  searchResultsLink: "/searchResults/",
+};
