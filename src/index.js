@@ -15,7 +15,7 @@ import { PAGE_LINKS } from "./constants";
 
 const App = () => {
   return (
-    <HashRouter>
+    <HashRouter basename="/moodboard">
       <Routes>
         <Route exact path={PAGE_LINKS.homepageLink} element={<Homepage />} />
         <Route path={PAGE_LINKS.resultsLink} element={<Results />} />
