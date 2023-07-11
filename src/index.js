@@ -2,7 +2,7 @@ import "./index.css";
 
 import React from "react";
 import ReactDOM from "react-dom";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import Results from "./pages/Results";
 import Personalboard from "./pages/Personalboard";
@@ -15,7 +15,7 @@ import { PAGE_LINKS } from "./constants";
 
 const App = () => {
   return (
-    <HashRouter basename="/moodboard">
+    <BrowserRouter basename="/moodboard">
       <Routes>
         <Route exact path={PAGE_LINKS.homepageLink} element={<Homepage />} />
         <Route path={PAGE_LINKS.resultsLink} element={<Results />} />
@@ -28,7 +28,7 @@ const App = () => {
           element={<SearchResults />}
         />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 };
 
