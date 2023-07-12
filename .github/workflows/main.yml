@@ -7,6 +7,8 @@ on:
 permissions:
   contents: write
 jobs:
+#  display-variables:${{vars.JOB_NAME}}
+#       name:
   build:
 
     runs-on: ubuntu-latest
@@ -23,8 +25,8 @@ jobs:
       env:
         REACT_APP_PEXELS_API_KEY: ${{ secrets.REACT_APP_PEXELS_API_KEY }}
         REACT_APP_GIPHY_KEY: ${{ secrets.REACT_APP_GIPHY_KEY }} 
-         CI:false
-    - name: Deploy
+       
+    - name: Deploy 
    
       uses: JamesIves/github-pages-deploy-action@4.0.0
       with:
