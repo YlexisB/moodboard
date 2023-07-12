@@ -5,7 +5,7 @@ const Category = () => {
   const navigate = useNavigate();
 
   const navigateToResults = (emotionData) => {
-    navigate(`/Results/${emotionData.id}`, {
+    navigate(`/results/${emotionData.id}`, {
       state: { color: emotionData.color },
     });
   };

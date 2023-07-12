@@ -25,7 +25,7 @@ export const MOODPAGE_STUFF = {
 };
 
 export const PAGE_LINKS = {
-  homepageLink: "/moodboard/",
+  homepageLink: "/",
   resultsLink: "/results/:id",
   personalbLink: "/personalboard/",
   moodPageLink: "/moodPage/:title",
