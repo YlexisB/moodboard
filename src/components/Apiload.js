@@ -19,8 +19,7 @@ const Apiload = ({ id, query }) => {
         },
       });
 
- 
-
+      console.log(process.env);
       setPexelData((prev) => ({
         ...prev,
         photos: [...prev.photos, ...res.data.photos],
