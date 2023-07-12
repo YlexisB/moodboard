@@ -12,6 +12,7 @@ const Apiload = ({ id, query }) => {
   const [selectedImageSrc, setSelectedImageSrc] = useState("");
 
   const fetchData = async (keyword) => {
+    console.log(process.env);
     try {
       const res = await axios.get(PEXELS_API_URL(keyword, page), {
         headers: {
@@ -19,7 +20,6 @@ const Apiload = ({ id, query }) => {
         },
       });
 
-      console.log(process.env);
       setPexelData((prev) => ({
         ...prev,
         photos: [...prev.photos, ...res.data.photos],
