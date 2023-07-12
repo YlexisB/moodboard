@@ -16,7 +16,7 @@ const Apiload = ({ id, query }) => {
     try {
       const res = await axios.get(PEXELS_API_URL(keyword, page), {
         headers: {
-          "Access-Control-Allow-Headers": "Accept",
+          "Access-Control-Allow-Origin": "*",
           Authorization: process.env.REACT_APP_PEXELS_API_KEY,
         },
       });
