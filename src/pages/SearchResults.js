@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from "react";
-
-import Header from "../components/Header";
-
 import Apiload from "../components/Apiload";
 import { useSearchParams } from "react-router-dom";
 
@@ -18,7 +15,6 @@ const SearchResults = ({ query }) => {
 
   return (
     <div>
-      <Header />
       <div id="search-section">
         <h1>{searchParams.get("search")}</h1>
       </div>

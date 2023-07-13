@@ -3,7 +3,7 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 
 import React, { useState } from "react";
-import Header from "../components/Header";
+
 import Loader from "../components/Loader";
 import { ABOUT_STUFF } from "../constants";
 
@@ -14,7 +14,6 @@ const About = () => {
   };
   return (
     <div id="about-section">
-      <Header />
       <div id="moodboard-section">
         <div className="personalpage-container">
           <div className="gif-about">

@@ -12,21 +12,24 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import SearchResults from "./pages/SearchResults";
 import { PAGE_LINKS } from "./constants";
+import Layout from "./components/Layout";
 
 const App = () => {
   return (
     <HashRouter>
       <Routes>
-        <Route exact path={PAGE_LINKS.homepageLink} element={<Homepage />} />
-        <Route path={PAGE_LINKS.resultsLink} element={<Results />} />
-        <Route path={PAGE_LINKS.personalbLink} element={<Personalboard />} />
-        <Route path={PAGE_LINKS.moodPageLink} element={<MoodPage />} />
-        <Route path={PAGE_LINKS.aboutLink} element={<About />} />
-        <Route path={PAGE_LINKS.contactLink} element={<Contact />} />
-        <Route
-          path={PAGE_LINKS.searchResultsLink}
-          element={<SearchResults />}
-        />
+        <Route element={<Layout />}>
+          <Route exact path={PAGE_LINKS.homepageLink} element={<Homepage />} />
+          <Route path={PAGE_LINKS.resultsLink} element={<Results />} />
+          <Route path={PAGE_LINKS.personalbLink} element={<Personalboard />} />
+          <Route path={PAGE_LINKS.moodPageLink} element={<MoodPage />} />
+          <Route path={PAGE_LINKS.aboutLink} element={<About />} />
+          <Route path={PAGE_LINKS.contactLink} element={<Contact />} />
+          <Route
+            path={PAGE_LINKS.searchResultsLink}
+            element={<SearchResults />}
+          />
+        </Route>
       </Routes>
     </HashRouter>
   );

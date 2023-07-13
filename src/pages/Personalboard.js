@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import MoodThumbnail from "../components/MoodThumbnail.js";
-import Header from "../components/Header.js";
 
 const Personalboard = () => {
   const [titles, setTitles] = useState([]);
@@ -24,7 +23,6 @@ const Personalboard = () => {
 
   return (
     <div>
-      <Header />
       <div id="moodboard-section">
         <h1>Moodboards</h1>
         <div className="personalpage-container">

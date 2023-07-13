@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Header from "../components/Header.js";
+
 import Draggable from "react-draggable";
 import { MOODPAGE_STUFF } from "../constants.js";
 
@@ -42,7 +42,6 @@ const MoodPage = () => {
 
   return (
     <div>
-      <Header />
       <div id="moodboard-section">
         <h1>{title}</h1>
         <span>

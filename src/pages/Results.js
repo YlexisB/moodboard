@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../components/Header.js";
+
 import Apiload from "../components/Apiload.js";
 import Emotion from "../components/Emotion.js";
 import emotionData from "../emotionData.json";
@@ -13,8 +13,6 @@ const Results = () => {
   const emotionItem = emotionData.find((item) => item.id === id);
   return (
     <div>
-      <Header />
-
       {emotionItem ? (
         <Emotion
           title={emotionItem.title}
