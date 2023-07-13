@@ -16,7 +16,8 @@ const Apiload = ({ id, query }) => {
     try {
       const res = await axios.get(PEXELS_API_URL(keyword, page), {
         headers: {
-          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Origin":
+            "https://ylexisb.github.io/moodboard/#/",
           "Access-Control-Allow-Headers":
             "Origin, X-Requested-With, Content-Type, Accept",
           Authorization: process.env.REACT_APP_PEXELS_API_KEY,
