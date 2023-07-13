@@ -18,7 +18,7 @@ const Apiload = ({ id, query }) => {
         headers: {
           "Access-Control-Allow-Credentials": "true",
           "Access-Control-Allow-Headers":
-            "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+            "Origin, Content-Type, Accept, Authorization",
           Authorization: process.env.REACT_APP_PEXELS_API_KEY,
         },
       });
