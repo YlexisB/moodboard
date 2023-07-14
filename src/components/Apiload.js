@@ -11,17 +11,6 @@ const Apiload = ({ id, query }) => {
   const [expandedImageId, setExpandedImageId] = useState("");
   const [selectedImageSrc, setSelectedImageSrc] = useState("");
 
-  // const fetchData = async (keyword) => {
-  //   console.log(process.env);
-  //   try {
-  //     const res = await axios.get(PEXELS_API_URL(keyword, page), {
-  //       headers: {
-  //         "Access-Control-Allow-Headers":
-  //           "Origin, Content-Type, Accept, Authorizationi",
-  //         Authorization: process.env.REACT_APP_PEXELS_API_KEY,
-  //       },
-  //     });
-
   const fetchData = async (keyword) => {
     try {
       const options = {

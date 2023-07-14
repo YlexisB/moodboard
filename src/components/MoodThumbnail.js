@@ -28,22 +28,17 @@ const MoodThumbnail = ({ title, titles, setTitles, onThumbnailClick }) => {
 
   //   fetchRandomColorGif();
   // }, []);
+
+  const giphyFetch = new GiphyFetch(process.env.REACT_APP_GIPHY_API_KEY);
+
   const fetchData = async () => {
     try {
-      const options = {
-        method: "GET",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-          "User-Agent": "GIPHY/JavaScript",
-          Authorization: process.env.REACT_APP_GIPHY_API_KEY,
-        },
-      };
-
-      const res = await axios.get(GIPHY_API_URL, options);
-
-      const gifUrl = res.data.data.images.original.url;
-      console.log("GIF URL:", gifUrl);
+      const { data: gifs } = await giphyFetch.random({
+        tag: "color",
+        rating: "g",
+      });
+      const gifUrl = gifs.images.original.url;
+      setGifUrl(gifUrl);
     } catch (error) {
       console.error("Error fetching random GIF:", error);
     }
