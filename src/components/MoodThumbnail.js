@@ -23,7 +23,7 @@ const MoodThumbnail = ({ title, titles, setTitles, onThumbnailClick }) => {
         console.error("Error fetching random GIF:", error);
       }
     };
-
+    console.log("it works");
     random();
   }, []);
 
