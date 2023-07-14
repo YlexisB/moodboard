@@ -29,11 +29,11 @@ const MoodThumbnail = ({ title, titles, setTitles, onThumbnailClick }) => {
   //   fetchRandomColorGif();
   // }, []);
   useEffect(() => {
-    const giphyFetch = new GiphyFetch(process.env.REACT_APP_GIPHY_API_KEY);
+    const gf = new GiphyFetch(process.env.REACT_APP_GIPHY_API_KEY);
 
     const random = async () => {
       try {
-        const { data } = await giphyFetch.random({
+        const { data } = await gf.random({
           tag: "color",
           rating: "g",
         });
