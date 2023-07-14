@@ -31,14 +31,13 @@ const MoodThumbnail = ({ title, titles, setTitles, onThumbnailClick }) => {
   useEffect(() => {
     const giphyFetch = new GiphyFetch(process.env.REACT_APP_GIPHY_API_KEY);
 
-    const fetchData = async () => {
+    const random = async () => {
       try {
-        const { data: gifs } = await giphyFetch.random({
-          api_key: process.env.REACT_APP_GIPHY_API_KEY,
+        const { data } = await giphyFetch.random({
           tag: "color",
           rating: "g",
         });
-        const gifUrl = gifs.images.original.url;
+        const gifUrl = data.images.original.url;
         setGifUrl(gifUrl);
       } catch (error) {
         console.error("Error fetching random GIF:", error);
