@@ -44,7 +44,7 @@ const MoodThumbnail = ({ title, titles, setTitles, onThumbnailClick }) => {
       }
     };
 
-    fetchData();
+    random();
   }, []);
 
   const handleMouseOver = () => {
