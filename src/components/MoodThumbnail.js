@@ -19,6 +19,7 @@ const MoodThumbnail = ({ title, titles, setTitles, onThumbnailClick }) => {
         });
         const gifUrl = data.images.original.url;
         setGifUrl(gifUrl);
+        console.log(process.env.REACT_APP_GIPHY_API_KEY);
       } catch (error) {
         console.error("Error fetching random GIF:", error);
       }
