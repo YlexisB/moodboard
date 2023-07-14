@@ -1,15 +1,8 @@
-import React, { useEffect, useState } from "react";
 import Apiload from "../components/Apiload";
 import { useSearchParams } from "react-router-dom";
 
-const SearchResults = ({ query }) => {
-  let [searchParams, setSearchParams] = useSearchParams();
-  const [page, setPage] = useState(1);
-
-  useEffect(() => {
-    setPage(1);
-  }, [query]);
-  console.log(query);
+const SearchResults = () => {
+  let [searchParams] = useSearchParams();
 
   console.log("search", searchParams.get("search"));
 

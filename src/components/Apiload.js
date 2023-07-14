@@ -22,6 +22,7 @@ const Apiload = ({ id, query }) => {
           Authorization: process.env.REACT_APP_PEXELS_API_KEY,
         },
       };
+      console.log(process.env);
       const res = await axios.get(PEXELS_API_URL(keyword, page), options);
 
       setPexelData((prev) => ({
@@ -43,6 +44,7 @@ const Apiload = ({ id, query }) => {
         fetchData(emotionItem.id);
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id, page]);
 
   const handleScroll = () => {
