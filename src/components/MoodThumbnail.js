@@ -10,7 +10,7 @@ const MoodThumbnail = ({ title, titles, setTitles, onThumbnailClick }) => {
 
   useEffect(() => {
     const gf = new GiphyFetch(process.env.REACT_APP_GIPHY_API_KEY);
-    console.log(process.env.REACT_APP_GIPHY_API_KEY);
+
     const random = async () => {
       try {
         const { data } = await gf.random({
