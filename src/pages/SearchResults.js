@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import Apiload from "../components/Apiload";
 import { useSearchParams } from "react-router-dom";
 
