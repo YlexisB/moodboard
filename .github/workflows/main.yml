@@ -24,7 +24,7 @@ jobs:
         npm run-script build
       env:
         REACT_APP_PEXELS_API_KEY: ${{ secrets.REACT_APP_PEXELS_API_KEY }}
-        REACT_APP_GIPHY_API_KEY: ${{ secrets.REACT_APP_GIPHY_KEY }} 
+        REACT_APP_GIPHY_API_KEY: ${{ secrets.REACT_APP_GIPHY_API_KEY }} 
        
     - name: Deploy 
    
