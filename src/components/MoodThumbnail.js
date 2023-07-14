@@ -28,23 +28,25 @@ const MoodThumbnail = ({ title, titles, setTitles, onThumbnailClick }) => {
 
   //   fetchRandomColorGif();
   // }, []);
+  useEffect(() => {
+    const giphyFetch = new GiphyFetch(process.env.REACT_APP_GIPHY_API_KEY);
 
-  const giphyFetch = new GiphyFetch(process.env.REACT_APP_GIPHY_API_KEY);
+    const fetchData = async () => {
+      try {
+        const { data: gifs } = await giphyFetch.random({
+          api_key: process.env.REACT_APP_GIPHY_API_KEY,
+          tag: "color",
+          rating: "g",
+        });
+        const gifUrl = gifs.images.original.url;
+        setGifUrl(gifUrl);
+      } catch (error) {
+        console.error("Error fetching random GIF:", error);
+      }
+    };
 
-  const fetchData = async () => {
-    try {
-      const { data: gifs } = await giphyFetch.random({
-        q: "color",
-        rating: "g",
-      });
-      const gifUrl = gifs.images.original.url;
-      setGifUrl(gifUrl);
-    } catch (error) {
-      console.error("Error fetching random GIF:", error);
-    }
-  };
-
-  fetchData();
+    fetchData();
+  }, []);
 
   const handleMouseOver = () => {
     setIsHovering(true);
