@@ -8,25 +8,6 @@ const MoodThumbnail = ({ title, titles, setTitles, onThumbnailClick }) => {
   const [isHovering, setIsHovering] = useState(false);
   const [gifUrl, setGifUrl] = useState(null);
 
-  // useEffect(() => {
-  //   const fetchRandomColorGif = async () => {
-  //     try {
-  //       const response = await axios.get(GIPHY_API_URL, {
-  //         params: {
-  //           api_key: process.env.REACT_APP_GIPHY_API_KEY,
-  //           tag: "color",
-  //           rating: "g",
-  //         },
-  //       });
-
-  //       setGifUrl(response.data.data.images.original.url);
-  //     } catch (error) {
-  //       console.error("Error fetching random GIF:", error);
-  //     }
-  //   };
-
-  //   fetchRandomColorGif();
-  // }, []);
   useEffect(() => {
     const gf = new GiphyFetch(process.env.REACT_APP_GIPHY_API_KEY);
 
