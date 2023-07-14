@@ -3,7 +3,9 @@ import Apiload from "../components/Apiload";
 import { useSearchParams } from "react-router-dom";
 
 const SearchResults = ({ query }) => {
+  // eslint-disable-next-line no-unused-vars
   let [searchParams, setSearchParams] = useSearchParams();
+  // eslint-disable-next-line no-unused-vars
   const [page, setPage] = useState(1);
 
   useEffect(() => {

@@ -43,6 +43,7 @@ const Apiload = ({ id, query }) => {
         fetchData(emotionItem.id);
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id, page]);
 
   const handleScroll = () => {

@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Loader from "./Loader";
-import axios from "axios";
-import { GIPHY_API_URL } from "../constants";
+
 import { GiphyFetch } from "@giphy/js-fetch-api";
 
 const MoodThumbnail = ({ title, titles, setTitles, onThumbnailClick }) => {
