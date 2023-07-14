@@ -34,6 +34,7 @@ const MoodThumbnail = ({ title, titles, setTitles, onThumbnailClick }) => {
   const fetchData = async () => {
     try {
       const { data: gifs } = await giphyFetch.random({
+        url: GIPHY_API_URL,
         tag: "color",
         rating: "g",
       });
