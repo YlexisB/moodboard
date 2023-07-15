@@ -1,7 +1,7 @@
 import React from "react";
 
-import Apiload from "../components/Apiload.js";
-import Emotion from "../components/Emotion.js";
+import Apiload from "../components/Apiload.jsx";
+import Emotion from "../components/Emotion.jsx";
 import emotionData from "../emotionData.json";
 import { useParams } from "react-router-dom";
 import { useLocation } from "react-router-dom";

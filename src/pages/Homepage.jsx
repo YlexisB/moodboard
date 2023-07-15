@@ -1,5 +1,5 @@
 import React from "react";
-import Category from "../components/Category.js";
+import Category from "../components/Category.jsx";
 
 const Homepage = () => {
   return (

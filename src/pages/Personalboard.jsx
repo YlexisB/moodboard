@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import MoodThumbnail from "../components/MoodThumbnail.js";
+import MoodThumbnail from "../components/MoodThumbnail.jsx";
 
 const Personalboard = () => {
   const [titles, setTitles] = useState([]);
