@@ -33,3 +33,12 @@ export const PAGE_LINKS = {
   contactLink: "/contact/",
   searchResultsLink: "/searchResults/",
 };
+
+export const CATEGORY_STUFF = {
+  love: "love",
+  happy: "happy",
+  sad: "sad",
+  fear: "fear",
+  anger: "anger",
+  surprise: "surprise",
+};

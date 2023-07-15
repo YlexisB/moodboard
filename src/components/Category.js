@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { CATEGORY_STUFF } from "../constants";
 
 const Category = () => {
   const navigate = useNavigate();
@@ -22,14 +23,14 @@ const Category = () => {
           onClick={() => handleClick("happy", "dbdf10")}
           className="div1"
         >
-          <h1>happy</h1>
+          <h1>{CATEGORY_STUFF.happy}</h1>
         </div>
         <div
           id="love"
           onClick={() => handleClick("love", "#fc10d6")}
           className="div2"
         >
-          <h1>love</h1>
+          <h1>{CATEGORY_STUFF.love}</h1>
         </div>
       </div>
       <hr />
@@ -39,14 +40,14 @@ const Category = () => {
           onClick={() => handleClick("sad", "#2748f2")}
           className="div3"
         >
-          <h1>sad</h1>
+          <h1>{CATEGORY_STUFF.sad}</h1>
         </div>
         <div
           id="fear"
           onClick={() => handleClick("fear", "#ff5b5b")}
           className="div4"
         >
-          <h1>fear</h1>
+          <h1>{CATEGORY_STUFF.fear}</h1>
         </div>
       </div>
       <hr />
@@ -56,14 +57,14 @@ const Category = () => {
           onClick={() => handleClick("anger", "#ea8c00")}
           className="div5"
         >
-          <h1>anger</h1>
+          <h1>{CATEGORY_STUFF.anger}</h1>
         </div>
         <div
           id="surprise"
           onClick={() => handleClick("surprise", "#00c6a2")}
           className="div6"
         >
-          <h1>surprise</h1>
+          <h1>{CATEGORY_STUFF.surprise}</h1>
         </div>
       </div>
     </div>
